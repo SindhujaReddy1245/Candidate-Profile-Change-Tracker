@@ -151,7 +151,6 @@ def upload_resume(
         previous_resume = (
             db.query(models.Resume)
             .filter(models.Resume.candidate_id == candidate_id)
-            .filter(models.Resume.uploaded_by == uploaded_by)
             .order_by(models.Resume.version.desc(), models.Resume.id.desc())
             .first()
         )
