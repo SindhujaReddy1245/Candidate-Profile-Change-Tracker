@@ -39,7 +39,7 @@ export default function Dashboard() {
 
     const fetchDashboard = async () => {
       try {
-        const res = await axios.get(`http://localhost:8000/users/${user.id}/dashboard`);
+        const res = await axios.get(`http://127.0.0.1:8000/users/${user.id}/dashboard`);
         setTotalResumes(res.data.total_resumes || 0);
         if (res.data.latest_result) {
           setLatestResult(res.data.latest_result);

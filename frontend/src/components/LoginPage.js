@@ -26,7 +26,7 @@ export default function LoginPage() {
     formData.append("password", password);
 
     try {
-      const res = await axios.post("http://localhost:8000/login", formData);
+      const res = await axios.post("http://127.0.0.1:8000/login", formData);
       saveUserAndOpenDashboard(res.data.user);
     } catch (err) {
       console.error(err);
@@ -47,7 +47,7 @@ export default function LoginPage() {
     formData.append("full_name", fullName);
 
     try {
-      const res = await axios.post("http://localhost:8000/register", formData);
+      const res = await axios.post("http://127.0.0.1:8000/register", formData);
       saveUserAndOpenDashboard(res.data.user);
     } catch (err) {
       console.error(err);

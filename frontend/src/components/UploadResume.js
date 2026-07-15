@@ -29,7 +29,7 @@ export default function UploadResume() {
     formData.append("file", file);
 
     try {
-      const res = await axios.post("http://localhost:8000/upload_resume", formData, {
+      const res = await axios.post("http://127.0.0.1:8000/upload_resume", formData, {
         headers: { "Content-Type": "multipart/form-data" },
       });
       const result = { ...res.data, fileName: file.name };

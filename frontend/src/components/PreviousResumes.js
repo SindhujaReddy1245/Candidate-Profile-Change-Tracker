@@ -16,7 +16,7 @@ export default function PreviousResumes() {
       }
 
       try {
-        const res = await axios.get(`http://localhost:8000/users/${currentUser.id}/resumes`);
+        const res = await axios.get(`http://127.0.0.1:8000/users/${currentUser.id}/resumes`);
         setResumes(res.data);
       } catch (err) {
         console.error(err);
@@ -31,7 +31,7 @@ export default function PreviousResumes() {
 
   const handleDelete = async (resumeId) => {
     try {
-      await axios.delete(`http://localhost:8000/resumes/${resumeId}`);
+      await axios.delete(`http://127.0.0.1:8000/resumes/${resumeId}`);
       setResumes((current) => current.filter((resume) => resume.id !== resumeId));
     } catch (err) {
       console.error(err);
