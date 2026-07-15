@@ -1,0 +1,10 @@
+backend/.env
+backend/candidate_tracker.db
+backend/uploads/
+backend/venv/
+backend/vennv/
+backend/source/
+frontend/build/
+frontend/node_modules/
+__pycache__/
+*.pyc
