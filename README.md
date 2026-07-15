@@ -99,6 +99,12 @@ http://localhost:3000
 
 ## How To Use
 
+### Demo Credentials
+You can log in directly using the pre-configured demo account:
+- **Username:** `demo`
+- **Password:** `demo`
+
+### Getting Started Steps
 1. Open the frontend.
 2. Create a new account using the Sign Up tab.
 3. Log in with the created account.
