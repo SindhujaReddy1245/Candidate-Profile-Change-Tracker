@@ -152,7 +152,7 @@ AI assistance was used during development to:
 - Improve resume comparison logic
 - Add rule-based and NLP-style change classification
 - Debug login, database, and GitHub setup issues
-- Prepare this submission README
+
 
 AI was used as a coding assistant. The final implementation was tested locally before submission.
 
